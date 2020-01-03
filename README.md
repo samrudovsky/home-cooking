@@ -20,7 +20,7 @@
 
 - Using computer vision, accurately recognize 15 different foods
 
-- Connect model's predictions with 65,000 recipes from http://www.allrecipes.com and allow a user to specify specific health metrics and prep time preferences
+- Connect model's predictions with 65,000 recipes from https://www.allrecipes.com and allow a user to specify specific health metrics and prep time preferences
 
 ---
 ### Process
@@ -28,7 +28,7 @@
 
 2) Build the top layer of a convolutional neural network with a VGG16 base.  Use Keras' ImageDataGenerator to augment images and train a fully connected block.  Train a CNN model on a GPU instance in AWS. 
 
-3) Scrape over 67,000 recipes from http://www.allrecipes.com on multiple AWS instances.  Capture the recipe name, ingredients, prep time, rating, and nutritional information.
+3) Scrape over 67,000 recipes from https://www.allrecipes.com on multiple AWS instances.  Capture the recipe name, ingredients, prep time, rating, and nutritional information.
 
 4) Link image predictions with recipes that incorporate those foods. Allow a user to specify personalized health metrics including low carb, low fat, low sodium, low calorie, low cholesterol, and high protein recipes.  Also filter recipes that can be completed in under 45 minutes for weeknight efficiency.
 
