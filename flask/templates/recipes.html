@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Recipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Styles/recipes.css') }}" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Raleway">
+
+  </head>  
+    
+  <body>
+      
+      <div id="container">
+      
+            <div id='message'><br>
+
+                    <h1 class='message_one'>Here are {{ diet_preference }} recipes that feature both {{ print_image_predictions }}</h1>
+
+            </div>
+
+            <div class=recipe_table>{{ recipes|safe }}</div><br>
+
+      </div>     
+    
+ </body>
+    
+</html>

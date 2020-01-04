@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Recipe Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Styles/Index.css') }}" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Raleway">
+
+  </head>  
+    
+  <body>
+    
+      
+    <form method="post" action="/recipes" enctype="multipart/form-data" class='form'>
+    
+    
+        <div class='container'>           
+        
+            
+                <h3 class='image_upload_prompt'><span class='step1'>1)</span> Upload images of your food</h3>
+
+                            <p><input type="file" name="file" autocomplete="off" required multiple></p>   
+            
+            <div class='diet'>
+            
+                <h3 class='diet_prompt'><span class='step2'>2)</span> Choose a specific dietary metric</h3>
+            
+                    <select class='diet_choices', name='diet_choices'>
+                            <option value=''>No Preference</option>
+                            <option value='low carb'>Low Carb</option>
+                            <option value='low calorie'>Low Calorie</option>
+                            <option value='low fat'>Low Fat</option>
+                            <option value='low cholesterol'>Low Cholesterol</option>
+                            <option value='low sodium'>Low Sodium</option>
+                            <option value='high protein'>High Protein</option>
+                    </select>
+            
+            </div>         
+
+            
+            <div class='prep_time'>
+            
+                <h3 class='prep_time_prompt'><span class='step3'>3)</span> Select your preferred prep time</h3>
+            
+                    <select name='prep_time_choice'>
+                        <option value='No Preference'>No Preference</option>
+                        <option value='Under 45 Minutes'>Under 45 minutes</option>
+                    </select>
+            
+            </div><br>  
+      
+                 <p>
+                        <input type="submit" value="Submit">
+                 </p>
+            
+            </div>
+        
+       </form><br>    
+       
+     
+  </body>
+    
+</html>

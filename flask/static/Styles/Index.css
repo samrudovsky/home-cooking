@@ -1,0 +1,43 @@
+body {
+    background: url(../background2.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: 50% 75%;
+    font-family: Montserrat;
+    text-align: center;   
+}
+
+.step1, .step2, .step3 {
+    font-size: 1.1em;
+}
+
+form {
+    border-style: solid;
+    border-width: 3px;
+    background-color: darkseagreen;
+    font-family: Montserrat;
+}
+
+.container {
+    text-align: center;
+    font-size: 1.23em;
+}
+
+input[type="submit"] { 
+    padding: 3px 6px;
+    background: white; 
+    border: 0 none;
+    border-radius: 2px;
+    font-family: Montserrat;
+    font-size: 1em;
+    font-weight: 600;
+    display: block;
+    margin: 0 auto 1em auto;
+}
+
+input[type="submit"]:hover {
+    background-color: #d6b7e1;
+}
+
+
