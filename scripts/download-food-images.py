@@ -17,9 +17,9 @@ starches = ['Sliced Bread', 'Rice', 'Pasta', 'Oatmeal']
 
 def downloadFoodImages(list_foods, n_img=300):
     '''
-    Use Google API to download 300 images for each food and save to disk. 
-    Assign each food as the title of a subdirectory in the 
-    'downloads' subdirectory
+    Use Google API to download 300 images for each class and save to disk. 
+    Make each food the title of a subdirectory in the 
+    'downloads' subdirectory for image augmentation and model training
     '''
     for food in list_foods:
         arguments = {"keywords": food,
