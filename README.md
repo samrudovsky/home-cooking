@@ -55,8 +55,8 @@ Perhaps you have all the ingredients for shakshuka except for the Israeli spices
 
 ### Code -- Python Scripts and Jupyter Notebook
 
-[web scraping code](scripts/web-scraping.py) Web scraping 
-[model](scripts/cnn-model-aws.py) Image recognition model 
-[recipe generator](scripts/recipes.py) Recipe generator
-[download images](scripts/download-food-images) Download training images
+[web scraping code](scripts/web-scraping.py) Web scraping <br>
+[model](scripts/cnn-model-aws.py) Image recognition model <br>
+[recipe generator](scripts/recipes.py) Recipe generator <br>
+[download images](scripts/download-food-images) Download training images <br>
 [notebook](notebooks/recipes.ipynb) Data wrangling, processing, topic modeling, model implementation, and recipe generation
