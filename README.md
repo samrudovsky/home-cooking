@@ -37,7 +37,7 @@
 ---
 ### Results
 
-The CNN model made accurate predictions on the training set 97% of the time and achieved an accuracy of 87% on unseen images.  The model made predictions with >90% accuracy on many unseen food classes, including kale (99%), eggplant (96%), sausage (99%), and bell peppers (95%), but struggled with other food images such as avocados (77%) and asparagus (68%).
+The CNN model made accurate predictions on the training set 97% of the time and achieved an accuracy of 88% on unseen images.  The model made predictions with >90% accuracy on many unseen food classes, including kale (99%), eggplant (96%), sausage (99%), and bell peppers (96%), but struggled with other food images such as avocados (81%) and asparagus (67%).
 The model was prone to overfitting due to the spare training seet.  Of the 300 images for each food item, nearly 100 were deleted in each class because they were not accurate depictions. As such, the model learned patterns that at times did not generalize to the class as a whole. It also struggled with foods that were displayed in different ways – i.e. a halved avocado is quite distinct from a whole avocado.  
 
 ---
