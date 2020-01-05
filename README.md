@@ -42,6 +42,8 @@ The model was prone to overfitting due to the spare training seet.  Of the 300 i
 
 ---
 
+![](app-demo.mov)
+
 ### Future Work
 
 With the advent of smart fridge technology, an image &#8594; recipe generator app could hold tremendous value. 
