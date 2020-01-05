@@ -226,20 +226,26 @@ preptime_choice = pickPrepTime()
 def linkModelWithRecipes(recipe_table, *predictions):
     
     '''Loop through the model's predictions (as many images as the user uploads) and
-    return a table of up to 4 recipes that incorporate those ingredients.
+    return a random sample of up to 4 recipes that incorporate those ingredients.
+    Account for the possibility that there may be fewer than 4 recipes that incorporate
+    a range of ingredients with a specific health metric and prep time preference.  
     '''
-
+    
     try:
         return recipe_table[np.logical_and.reduce([recipe_table['Ingredients'].str.contains(ingredient) for ingredient in predictions])].sample(4)
-    except:
+   
+   except:
         try:
             return recipe_table[np.logical_and.reduce([recipe_table['Ingredients'].str.contains(ingredient) for ingredient in predictions])].sample(3)
-        except:
+       
+       except:
             try:
                 return recipe_table[np.logical_and.reduce([recipe_table['Ingredients'].str.contains(ingredient) for ingredient in predictions])].sample(2)
-            except:
+           
+           except:
                 try:
                     return recipe_table[np.logical_and.reduce([recipe_table['Ingredients'].str.contains(ingredient) for ingredient in   predictions])].sample(1)
+                
                 except:
                     pass
 
