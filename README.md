@@ -42,7 +42,7 @@ The model was prone to overfitting due to the spare training seet.  Of the 300 i
 
 ---
 
-![](app-demo.mov)
+![App Demo](flask/app-demo.mov)
 
 ### Future Work
 
